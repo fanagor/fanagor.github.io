@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hristo Papazov on Hristo Papazov - Academic Website</title>
+    <link>https://fanagor.github.io/</link>
+    <description>Recent content in Hristo Papazov on Hristo Papazov - Academic Website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://fanagor.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beyond Research</title>
+      <link>https://fanagor.github.io/beyond-research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fanagor.github.io/beyond-research/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;footer&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fanagor.github.io/&#34;&gt;← Back to Home&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/footer&gt;</description>
+    </item>
+  </channel>
+</rss>
