@@ -1,0 +1,167 @@
+\documentclass[letterpaper, 10pt]{academiccv}
+
+\name{Hristo Papazov}
+\subtitle{PhD Candidate in the \href{https://www.epfl.ch/labs/tml/}{Theory of Machine Learning Lab} at EPFL}
+\contact{\texttt{h.g.papazov@gmail.com} \quad | \quad \texttt{https://fanagor.github.io/}}
+
+\usepackage[backend=biber,style=ieee,sorting=ydnt,maxbibnames=99]{biblatex}
+% Use a sourcemap to insert LaTeX markup into the author field for the
+% specific author we want to highlight. This replaces occurrences of
+% "Papazov, Hristo" with "\textbf{Papazov, Hristo}" so the family name
+% is bold in the final bibliography. This relies on biber processing the
+% .bib and must be defined before \addbibresource (so the mapping is in
+% effect when the .bib is read).
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=author,
+            match=\regexp{Papazov,\s*Hristo},
+            replace={\\textbf{H. Papazov}}]
+    }
+  }
+}
+\addbibresource{publications.bib}
+
+\setlength\bibitemsep{0.5em}      % space between items
+\setlength\bibhang{1em}           % hanging indent
+
+% Define filters
+\defbibfilter{journals}{
+  type=article and not keyword=preprint
+}
+
+\defbibfilter{conferences}{
+  type=inproceedings
+}
+
+\defbibfilter{preprints}{
+  keyword=preprint
+}
+
+\begin{document}
+\makecvtitle
+
+\cvsection{Research Interests}
+
+My research focuses on uncovering hidden algorithmic processes underlying structured data through discrete and gradient-based methods. I take broad interest in Algorithmic Learning Theory and Program Synthesis.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Education}
+
+\cveducation{2022/09 -- present}{PhD in Theoretical Machine Learning}{\href{https://www.epfl.ch/en/}{EPFL}}{(GPA 6.00/6.00) -- Advised by Nicolas Flammarion.}
+
+\cveducation{2021/09 -- 2022/08 \\ \small Transferred to EPFL}{PhD in Applied Mathematics}{\href{https://web.mit.edu/}{MIT}}{(GPA 5.00/5.00) -- Worked on discrete algorithms and coursework requirements.}
+
+\cveducation{2017/09 -- 2021/05}{A.B. in Mathematics/Certificate in Applications of Computing}{\href{https://www.princeton.edu/}{Princeton}}{(GPA 3.95/4.00) -- \textit{Magna cum laude}}
+
+\cveducation{2020/01 -- 2020/06}{Exchange Semester in Pure Mathematics}{\href{https://www.worc.ox.ac.uk/}{Worcester College, Oxford}}{(GPA 4.00/4.00)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Publications}
+
+% Force include all entries from the .bib (useful for CVs listing all works)
+\nocite{*}
+
+\cvsubsection{Journal Publications}
+\printbibliography[filter=journals,heading=none]
+
+\cvsubsection{Conference Publications}
+\printbibliography[filter=conferences,heading=none]
+
+\cvsubsection{Preprints}
+\printbibliography[filter=preprints,heading=none]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Experience}
+
+\cvexperience{2022/06 -- 2022/09}{Summer Research under Reitano Fellowship}{MIT}{Wrote a paper with novel lower bounds on the competitive ratio of the Convex Body Chasing
+and extended the analysis of the problem to general metric spaces.}
+
+\cvexperience{2020/06 -- 2020/09}{ML Intern}{Ontotext}{Worked on EU research projects. Extracted disease data from medical ontologies using SPARQL
+queries. Expanded semantic knowledge graphs with medical data in GraphDB. Implemented a fast
+algorithm for ontological mappings extraction. Designed randomized natural language
+augmentation algorithms for creation of additional synthetic data. Ran BioBERT multi-label text
+classification experiments on the Dutch supercomputer Cartesius using a Unix-like batch system.
+Published a paper at RANLP 2021.}
+
+\cvexperience{2019/06 -- 2019/09}{Summer Research}{Princeton}{Generalized Levinson’s LogLog Theorem to cover solutions of linear elliptic PDE with real analytic
+coefficients and published this research in the Journal of Mathematical
+Physics with Professor Aleksandr Logunov.}
+
+\cvexperience{2017/09 -- 2019/12}{Student Manager}{Princeton Dining}{Rose through the ranks: from student worker – to student captain – to student manager. Managed
+12 student workers over 5-hour long shifts twice a week. Coordinated effort and logistics with
+professional dining hall staff. Coordinated and supervised dining operations for the 2018th Princeton Reunions.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Teaching and Supervision}
+
+\cvsupervision{Fall 2025}{MSc Project of Ender Isik}{EPFL}{Algorithmic Synthesis with Neural Cellular Automata}
+
+\cvsupervision{Fall 2025}{MSc Project of Khan Nguyen}{EPFL}{Learning Computable Functions with Polynomial-Size Characterisitc Sets}
+
+\cvteaching{Fall 2023 -- 2025}{Teacher Assistant for Machine Learning CS-433}{EPFL}
+
+\cvteaching{Spring 2024 -- 2025}{Teacher Assistant for Theory of Computation CS-251}{EPFL}
+
+\cvteaching{Spring 2023}{Teacher Assistant for Probability and Statistics MATH-235}{EPFL}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Selected Honors and Awards}
+
+\cvhonor{2022/09}{EDIC PhD Fellowship}{EPFL Computer Science Department}
+\cvhonor{2021/09}{Reitano Fellowship}{MIT Math Department}
+\cvhonor{2021/05}{Sigma Xi Book Award for Outstanding Research}{Princeton Math Department}
+\cvhonor{2020/09}{Phi Beta Kappa}{PBK, Beta Chapter of New Jersey}
+\cvhonor{2019/09}{Shapiro Prize for Academic Excellence for the Princeton Class of 2021}{Princeton}
+\cvhonor{2017/06}{Bronze Medal}{58th International Math Olympiad}
+\cvhonor{2017/05}{1st Place}{Bulgarian National Math Olympiad}
+\cvhonor{2016/06}{Bronze Medal}{57th International Math Olympiad}
+\cvhonor{2016/05}{Bronze Medal}{33rd Balkan Math Olympiad}
+\cvhonor{2013/06}{Bronze Medal}{17th Junior Balkan Math Olympiad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Service}
+% \begin{cvlist}
+%   \item Reviewer: Conference A, Journal B.
+%   \item Organizer: Workshop C.
+% \end{cvlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Coursework}
+
+% \cvcourse{Princeton Analysis Sequence}{Princeton}{Fourier, Complex, Real, Functional Analysis}
+
+% \cvcourse{Discrete Mathematics}{Princeton, Oxford, MIT, EPFL}{Extremal, Probabilistic, and Algebraic Combinatorics; Advanced Algorithms and Data Structures; Probabilistic Algorithms;
+% Theory of Computation; Quantum Information, Information Theory and Coding}
+
+% \cvcourse{Machine Learning}{Princeton, Oxford, EPFL}{ML and Pattern Recognition, Optimization Theory, Statistical Learning Theory, Probability Theory}
+
+% \cvcourse{Algebra}{Princeton, Oxford}{Algebraic Number Theory, Algebraic Curves, Commutative Algebra, Model Theory}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Technical Skills}
+% \textbf{Python} (\textit{Numpy}, \textit{PyPlot}, \textit{PyTorch}) \quad | \quad \textbf{Java} \quad | \quad \textbf{LaTeX}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Languages}
+% \textbf{English} \textit{(C2)} \quad | \quad \textbf{Bulgarian} \textit{(Native)} \quad | \quad \textbf{Spanish} \textit{(B1)} \quad | \quad \textbf{German} \textit{(B2)}
+
+\end{document}
