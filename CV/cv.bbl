@@ -1,0 +1,219 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global/global}
+    \entry{papazov2024leveraging}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=9ee7130fc8cc1af4bbc70cea5acd02c4}{%
+           family={\textbf{H.\bibnamedelimi Papazov}},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ef98b8c43a8ad4a1d14d7588109322ef}{%
+           family={D'Angelo},
+           familyi={D\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e2d7053f85144a452931150e4ba9f19c}{%
+           family={Flammarion},
+           familyi={F\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{1921cb5db8ede060e9b2a0408c9ed059}
+      \strng{fullhash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{fullhashraw}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{bibnamehash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{authorbibnamehash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{authornamehash}{1921cb5db8ede060e9b2a0408c9ed059}
+      \strng{authorfullhash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{authorfullhashraw}{6e7cca158e6d96c6a1dd918cdebce059}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Workshop on Mathematical Reasoning and AI, NeurIPS}
+      \field{title}{Exact Learning of Arithmetic with Differenitable Agents}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{papazov2025learning}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=9ee7130fc8cc1af4bbc70cea5acd02c4}{%
+           family={\textbf{H.\bibnamedelimi Papazov}},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e2d7053f85144a452931150e4ba9f19c}{%
+           family={Flammarion},
+           familyi={F\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=ef45a88580d8b390d9b005d482c4281f}{%
+           family={Haghtalab},
+           familyi={H\bibinitperiod},
+           given={Nika},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d3a533fb3a2bb9d053af2a25892a7315}{%
+           family={Moitra},
+           familyi={M\bibinitperiod},
+           given={Ankur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{df7849c947bb52f493210bb8c22c902e}
+      \strng{fullhash}{df7849c947bb52f493210bb8c22c902e}
+      \strng{fullhashraw}{df7849c947bb52f493210bb8c22c902e}
+      \strng{bibnamehash}{df7849c947bb52f493210bb8c22c902e}
+      \strng{authorbibnamehash}{df7849c947bb52f493210bb8c22c902e}
+      \strng{authornamehash}{df7849c947bb52f493210bb8c22c902e}
+      \strng{authorfullhash}{df7849c947bb52f493210bb8c22c902e}
+      \strng{authorfullhashraw}{df7849c947bb52f493210bb8c22c902e}
+      \strng{editorbibnamehash}{2e72b520da5b2a186ef9a0f2a9dd41a7}
+      \strng{editornamehash}{2e72b520da5b2a186ef9a0f2a9dd41a7}
+      \strng{editorfullhash}{2e72b520da5b2a186ef9a0f2a9dd41a7}
+      \strng{editorfullhashraw}{2e72b520da5b2a186ef9a0f2a9dd41a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of Thirty Eighth Conference on Learning Theory}
+      \field{series}{Proceedings of Machine Learning Research}
+      \field{title}{Learning Algorithms in the Limit}
+      \field{volume}{291}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{4486\bibrangedash 4510}
+      \range{pages}{25}
+    \endentry
+    \entry{papazov2023role}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ee7130fc8cc1af4bbc70cea5acd02c4}{%
+           family={\textbf{H.\bibnamedelimi Papazov}},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \strng{fullhash}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \strng{fullhashraw}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \strng{bibnamehash}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \strng{authorbibnamehash}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \strng{authornamehash}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \strng{authorfullhash}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \strng{authorfullhashraw}{9ee7130fc8cc1af4bbc70cea5acd02c4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2307.09350}
+      \field{title}{The Role of Dimension in the Online Chasing Problem}
+      \field{year}{2023}
+      \true{nocite}
+      \keyw{preprint}
+    \endentry
+    \entry{hristov2021application}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=31580eef60ed0d1baed767d4600447ba}{%
+           family={Hristov},
+           familyi={H\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a6a5f26551bd57b428124ea685cba754}{%
+           family={Tahchiev},
+           familyi={T\bibinitperiod},
+           given={Aleksandar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9ee7130fc8cc1af4bbc70cea5acd02c4}{%
+           family={\textbf{H.\bibnamedelimi Papazov}},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=710bdee562fe175b27ff88adee2bfb48}{%
+           family={Tulechki},
+           familyi={T\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=89cfbf2b044f504261de4f34e5c591da}{%
+           family={Primov},
+           familyi={P\bibinitperiod},
+           given={Todor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0a94307a2ac8f6b27ae3a8360ac26ece}{%
+           family={Boytcheva},
+           familyi={B\bibinitperiod},
+           given={Svetla},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd94519168d21990bef511652b8074f0}
+      \strng{fullhash}{45cee7e5c0225fe4001f903d6b6ca3a5}
+      \strng{fullhashraw}{45cee7e5c0225fe4001f903d6b6ca3a5}
+      \strng{bibnamehash}{45cee7e5c0225fe4001f903d6b6ca3a5}
+      \strng{authorbibnamehash}{45cee7e5c0225fe4001f903d6b6ca3a5}
+      \strng{authornamehash}{cd94519168d21990bef511652b8074f0}
+      \strng{authorfullhash}{45cee7e5c0225fe4001f903d6b6ca3a5}
+      \strng{authorfullhashraw}{45cee7e5c0225fe4001f903d6b6ca3a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2021)}
+      \field{title}{Application of deep learning methods to SNOMED CT encoding of clinical texts: from data collection to extreme multi-label text-based classification}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{557\bibrangedash 565}
+      \range{pages}{9}
+    \endentry
+    \entry{logunov2021elliptic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b0ac07504dc0f17f0a509972ed0fdbc1}{%
+           family={Logunov},
+           familyi={L\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9ee7130fc8cc1af4bbc70cea5acd02c4}{%
+           family={\textbf{H.\bibnamedelimi Papazov}},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \strng{fullhash}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \strng{fullhashraw}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \strng{bibnamehash}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \strng{authorbibnamehash}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \strng{authornamehash}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \strng{authorfullhash}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \strng{authorfullhashraw}{fd22deb2d1b6071c51ad1b571cfd9f4b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{6}
+      \field{title}{An elliptic adaptation of ideas of Carleman and Domar from complex analysis related to Levinson’s loglog theorem}
+      \field{volume}{62}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
