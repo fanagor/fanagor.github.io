@@ -19,6 +19,83 @@
 
 \refsection{0}
   \datalist[entry]{ydnt/global//global/global/global}
+    \entry{papazov2026space}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e2d7053f85144a452931150e4ba9f19c}{%
+           family={Flammarion},
+           familyi={F\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cdf860fb5fc49b9d47be74e13a7fd229}{%
+           family={Pabbaraju},
+           familyi={P\bibinitperiod},
+           given={Chirag},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b4ac22cc2376fa102824ae6426137013}{%
+           family={\textbf{H.\bibnamedelimi Papazov*}},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a8121723fec40d2bb3f1a992ccf73f9f}{%
+           family={Svensson},
+           familyi={S\bibinitperiod},
+           given={Ola},
+           giveni={O\bibinitperiod}}}%
+        {{hash=89df28902883d2440c76baca97f3cfe1}{%
+           family={Stouras},
+           familyi={S\bibinitperiod},
+           given={Miltiadis},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e9118908c530b7cb36030ab8867383c}
+      \strng{fullhash}{6cf7d0f13b38332ad83dcbe4c8b2764d}
+      \strng{fullhashraw}{6cf7d0f13b38332ad83dcbe4c8b2764d}
+      \strng{bibnamehash}{6cf7d0f13b38332ad83dcbe4c8b2764d}
+      \strng{authorbibnamehash}{6cf7d0f13b38332ad83dcbe4c8b2764d}
+      \strng{authornamehash}{1e9118908c530b7cb36030ab8867383c}
+      \strng{authorfullhash}{6cf7d0f13b38332ad83dcbe4c8b2764d}
+      \strng{authorfullhashraw}{6cf7d0f13b38332ad83dcbe4c8b2764d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Space-Efficient Language Generation in the Limit}
+      \field{year}{Submitted to COLT 2026}
+      \true{nocite}
+      \keyw{preprint}
+    \endentry
+    \entry{papazov2026differentiable}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9ee7130fc8cc1af4bbc70cea5acd02c4}{%
+           family={\textbf{H.\bibnamedelimi Papazov}},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ef98b8c43a8ad4a1d14d7588109322ef}{%
+           family={D'Angelo},
+           familyi={D\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e2d7053f85144a452931150e4ba9f19c}{%
+           family={Flammarion},
+           familyi={F\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1921cb5db8ede060e9b2a0408c9ed059}
+      \strng{fullhash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{fullhashraw}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{bibnamehash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{authorbibnamehash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{authornamehash}{1921cb5db8ede060e9b2a0408c9ed059}
+      \strng{authorfullhash}{6e7cca158e6d96c6a1dd918cdebce059}
+      \strng{authorfullhashraw}{6e7cca158e6d96c6a1dd918cdebce059}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Differentiable Exact Learning from Behavior Observations}
+      \field{year}{Submitted to ICML 2026}
+      \true{nocite}
+      \keyw{preprint}
+    \endentry
     \entry{papazov2024leveraging}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=9ee7130fc8cc1af4bbc70cea5acd02c4}{%
@@ -46,6 +123,7 @@
       \strng{authornamehash}{1921cb5db8ede060e9b2a0408c9ed059}
       \strng{authorfullhash}{6e7cca158e6d96c6a1dd918cdebce059}
       \strng{authorfullhashraw}{6e7cca158e6d96c6a1dd918cdebce059}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}

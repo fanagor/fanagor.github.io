@@ -21,6 +21,15 @@ Anticipated Graduation Date: 05/2027}
     }
   }
 }
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=author,
+            match=\regexp{Papazov\*,\s*Hristo},
+            replace={\\textbf{H. Papazov*}}]
+    }
+  }
+}
 \addbibresource{publications.bib}
 
 \setlength\bibitemsep{0.5em}      % space between items
@@ -77,6 +86,8 @@ My research focuses on uncovering hidden algorithmic processes underlying struct
 
 \cvsubsection{Preprints}
 \printbibliography[filter=preprints,heading=none]
+
+\textbf{*} Alphabetical sorting of authors.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

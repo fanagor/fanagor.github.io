@@ -880,6 +880,11 @@
         <bcf:map_step map_field_source="author" map_match="Papazov,\s*Hristo" map_replace="\\textbf{H. Papazov}"/>
       </bcf:map>
     </bcf:maps>
+    <bcf:maps datatype="bibtex" level="user">
+      <bcf:map>
+        <bcf:map_step map_field_source="author" map_match="Papazov\*,\s*Hristo" map_replace="\\textbf{H. Papazov*}"/>
+      </bcf:map>
+    </bcf:maps>
     <bcf:maps datatype="bibtex" level="driver">
       <bcf:map>
         <bcf:map_step map_field_set="day" map_null="1"/>
