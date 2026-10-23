@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber cv"] 1771513157.9297 "cv.bcf" "cv.bbl" "cv" 1771513161.02567 0
-  "cv.bcf" 1771513160.94635 108983 ba364c3fc1a86caa244ecb7dcaf67d5b "pdflatex"
-  "publications.bib" 1771513157.90372 2535 f1928db495d12ab9d727ac4c457984c7 ""
+["biber cv"] 1792762026.66881 "cv.bcf" "cv.bbl" "cv" 1792766958.34655 0
+  "cv.bcf" 1792766958.22844 108770 e62cd780fd09f6a000d8449a1a557c5b "pdflatex"
+  "publications.bib" 1792762009.43261 2691 eeaef305372989ea214059334d84854e ""
   (generated)
   "cv.bbl"
   "cv.blg"
   (rewritten before read)
-["pdflatex"] 1771513160.1483 "/Users/hristopapazov/Documents/Workspace/my-website/hugo-site/static/CV/cv.tex" "cv.pdf" "cv" 1771513161.02593 0
-  "/Users/hristopapazov/Documents/Workspace/my-website/hugo-site/static/CV/cv.tex" 1771513112.04172 8198 c0ce378d3f8060551d5f3f24b8dab037 ""
+["pdflatex"] 1792766956.96686 "/Users/hristopapazov/Documents/Workspace/my-website/hugo-site/static/CV/cv.tex" "cv.pdf" "cv" 1792766958.34699 0
+  "/Users/hristopapazov/Documents/Workspace/my-website/hugo-site/static/CV/cv.tex" 1792766956.61906 8465 6a7c1c0d092cf90120bca49e64d63aaa ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -111,11 +111,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1761743593 3345739 6c9000ffc822ae4851443398994172d9 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "academiccv.cls" 1761746699.27689 3422 cee2c91c284147c13e95e83e89c86598 ""
-  "cv.aux" 1771513160.94499 904 6689e68e1d8312188d23f99e834d843b "pdflatex"
-  "cv.bbl" 1771513159.20755 12491 2d36452e36c57139bb070e2c6788ae49 "biber cv"
-  "cv.out" 1771513160.66856 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.run.xml" 1771513160.94694 2390 8e0e3d19df82f47b3a1968f839f19e72 "pdflatex"
-  "cv.tex" 1771513112.04172 8198 c0ce378d3f8060551d5f3f24b8dab037 ""
+  "cv.aux" 1792766958.22643 988 f1f62c3d3812b4dce7ece312e638da80 "pdflatex"
+  "cv.bbl" 1792762028.67237 15044 597fcd6e9f35454092e70e5c9fdc0e05 "biber cv"
+  "cv.out" 1792766957.78603 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.run.xml" 1792766958.22936 2390 8e0e3d19df82f47b3a1968f839f19e72 "pdflatex"
+  "cv.tex" 1792766956.61906 8465 6a7c1c0d092cf90120bca49e64d63aaa ""
   (generated)
   "cv.aux"
   "cv.bcf"

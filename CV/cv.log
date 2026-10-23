@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.29)  19 FEB 2026 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.29)  23 OCT 2026 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,44 +473,44 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 \@quotelevel=\count416
 \@quotereset=\count417
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 51.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 42.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Info: Redefining \microtypecontext on input line 51.
-Package microtype Info: Applying patch `item' on input line 51.
-Package microtype Info: Applying patch `toc' on input line 51.
-Package microtype Info: Applying patch `eqnum' on input line 51.
-Package microtype Info: Applying patch `footnote' on input line 51.
-Package microtype Info: Applying patch `verbatim' on input line 51.
-LaTeX Info: Redefining \microtypesetup on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Info: Redefining \microtypecontext on input line 42.
+Package microtype Info: Applying patch `item' on input line 42.
+Package microtype Info: Applying patch `toc' on input line 42.
+Package microtype Info: Applying patch `eqnum' on input line 42.
+Package microtype Info: Applying patch `footnote' on input line 42.
+Package microtype Info: Applying patch `verbatim' on input line 42.
+LaTeX Info: Redefining \microtypesetup on input line 42.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 51.
+LaTeX Info: Redefining \showhyphens on input line 42.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -551,7 +551,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 51.
+Package hyperref Info: Link coloring OFF on input line 42.
 (./cv.out) (./cv.out)
 \@outlinefile=\write4
 \openout4 = `cv.out'.
@@ -569,9 +569,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'cv.bbl' found.
  (./cv.bbl)
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 52.
+Package biblatex Info: Reference section=0 on input line 42.
+Package biblatex Info: Reference segment=0 on input line 42.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 43.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -579,61 +579,52 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 63.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 54.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 63.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 54.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 63.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 54.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 63.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 54.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 63.
+(Font)              <10> on input line 54.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 63.
+(Font)              <7> on input line 54.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 63.
+(Font)              <5> on input line 54.
 
-Underfull \hbox (badness 10000) in alignment at lines 63--63
+Underfull \hbox (badness 10000) in alignment at lines 54--54
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 65--65
+Underfull \hbox (badness 10000) in alignment at lines 56--56
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 67--67
+Underfull \hbox (badness 10000) in alignment at lines 58--58
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 69--69
+Underfull \hbox (badness 10000) in alignment at lines 60--60
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 71--71
+Underfull \hbox (badness 10000) in alignment at lines 62--62
 [][]
  []
-
-
-Package biblatex Warning: Split bibliography detected.
-(biblatex)                Many simple split bibliography setups with
-(biblatex)                non-overlapping bibliographies benefit from
-(biblatex)                setting 'defernumbers=true'.
-(biblatex)                See the documentation for details.
-(biblatex)                This warning can be suppressed with
-(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
 
 Package biblatex Warning: Split bibliography detected.
@@ -658,17 +649,42 @@ Package biblatex Warning: Split bibliography detected.
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-Underfull \hbox (badness 10000) in alignment at lines 98--98
+
+Package biblatex Warning: Split bibliography detected.
+(biblatex)                Many simple split bibliography setups with
+(biblatex)                non-overlapping bibliographies benefit from
+(biblatex)                setting 'defernumbers=true'.
+(biblatex)                See the documentation for details.
+(biblatex)                This warning can be suppressed with
+(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 86--86
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 105--105
+Underfull \hbox (badness 10000) in alignment at lines 89--89
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 109--109
+Underfull \hbox (badness 10000) in alignment at lines 96--96
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 100--100
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 102--102
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 106--106
 [][]
  []
 
@@ -678,33 +694,28 @@ Underfull \hbox (badness 10000) in alignment at lines 113--113
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 120--120
+Underfull \hbox (badness 10000) in alignment at lines 115--115
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 122--122
+Underfull \hbox (badness 10000) in alignment at lines 117--117
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 124--124
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 126--126
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 128--128
+Underfull \hbox (badness 10000) in alignment at lines 119--119
 [][]
  []
 
 
 
 [2]
+Underfull \hbox (badness 10000) in alignment at lines 121--121
+[][]
+ []
+
+
 
 [3] (./cv.aux)
  ***********
@@ -718,18 +729,18 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18309 strings out of 473190
- 326019 string characters out of 5715799
- 1192269 words of memory out of 5000000
- 41271 multiletter control sequences out of 15000+600000
- 611525 words of font info for 110 fonts, out of 8000000 for 9000
+ 18317 strings out of 473190
+ 326249 string characters out of 5715799
+ 1192668 words of memory out of 5000000
+ 41274 multiletter control sequences out of 15000+600000
+ 611702 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,93p,1071b,1451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,93p,1071b,1452s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on cv.pdf (3 pages, 216711 bytes).
+Output written on cv.pdf (3 pages, 217974 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  29697 words of extra memory for PDF output out of 29859 (max. 10000000)
 
