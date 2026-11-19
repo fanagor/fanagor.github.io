@@ -5,6 +5,8 @@ const $ = id => document.getElementById(id);
 const drawGrid = gridView($('grid'));
 let columns = window.innerWidth < 720 ? 11 : 21, rows = 7;
 $('cols').value = columns;
+const limitField = $('step-limit');
+let stepLimit = limitField.valueAsNumber;
 const speeds = [1, 2, 4, 8, 16, 32, 64, 128];
 const names = { add2: 'Binary Addition', mult2: 'Binary Multiplication', add10: 'Decimal Addition', mult10: 'Decimal Multiplication', universal: 'Universal Simulation' };
 const families = { Expert: 'Expert', DFST: 'DFST', DFST_Softmax: 'Softmax DFST' };
@@ -45,7 +47,7 @@ async function get(path, type) {
 }
 function pause() { clearInterval(timer); timer = null; $('play').textContent = '▶ Play'; }
 function controls() {
-    const stopped = busy || !execution || execution.halted || !frame || execution.count >= 100000;
+    const stopped = busy || !execution || execution.halted || !frame || execution.count >= stepLimit;
     $('play').disabled = stopped;
     $('step').disabled = stopped;
     $('reset').disabled = busy || !execution;
@@ -154,13 +156,29 @@ function refresh(jump = false) {
     $('counter').value = 'Step ' + s.count.toLocaleString();
     frame = inspectStep(s);
     inspect(s, frame);
-    $('status').textContent = s.halted ? 'Halted.' : s.count >= 100000 ? 'Stopped at the 100,000-step playback limit.' : `${names[$('task').value]} · ${families[$('family').value]} · ${loadedInput || 'empty word'}`;
-    if (s.halted || s.count >= 100000)
+    updatePlaybackStatus();
+}
+function updatePlaybackStatus() {
+    const s = execution;
+    if (s.halted) {
         pause();
+        $('status').textContent = 'Halted.';
+    } else if (s.count >= stepLimit) {
+        pause();
+        $('status').textContent = `Paused at step ${s.count.toLocaleString()}. Raise the step limit to continue.`;
+    } else {
+        $('status').textContent = `${names[$('task').value]} · ${families[$('family').value]} · ${loadedInput || 'empty word'}`;
+    }
     controls();
 }
+limitField.onchange = () => {
+    const value = limitField.valueAsNumber;
+    if (Number.isSafeInteger(value) && value >= 1) stepLimit = value;
+    limitField.value = stepLimit;
+    if (execution && (frame || execution.halted)) updatePlaybackStatus();
+};
 function step() {
-    if (!frame || execution.halted)
+    if (!frame || execution.halted || execution.count >= stepLimit)
         return;
     try {
         const jump = ['X', 'Y', 'Z'].includes(frame.motion);

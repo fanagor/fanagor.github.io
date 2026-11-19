@@ -153,7 +153,8 @@ h2 {
 .controls {
   gap: 8px;
 }
-.speed {
+.limit input { width: 7em; }
+.limit, .speed {
   display: flex;
   align-items: center;
   margin-left: 6px;
