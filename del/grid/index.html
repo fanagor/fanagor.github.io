@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   Grid explorer · Differentiable Exact Learning
+   Grid Agent Explorer · Differentiable Exact Learning
   </title>
   <link href="style.css" rel="stylesheet"/>
  </head>
@@ -27,7 +27,7 @@
     Differentiable Exact Learning
    </p>
    <h1>
-    Grid explorer
+    Grid Agent Explorer
    </h1>
    <p class="intro">
     Follow an expert or a learned controller one read, write, and move at a time.
@@ -44,7 +44,7 @@
      </select>
     </label>
     <label for="run" hidden="" id="runLabel">
-     Released checkpoint
+     Released Checkpoint
      <select id="run">
      </select>
     </label>
@@ -58,7 +58,7 @@
      <input autocomplete="off" id="input" maxlength="4096" spellcheck="false" value="101+11"/>
     </label>
     <button type="submit">
-     Load input
+     Load Input
     </button>
    </form>
    <p id="status" role="status">
@@ -67,14 +67,17 @@
    <section class="board">
     <div class="titlebar">
      <h2>
-      Grid memory
+      Grid
      </h2>
      <output id="counter">
       Step 0
      </output>
     </div>
-    <div aria-label="Grid memory" id="grid" role="img">
+    <div class="dimensions">
+     <label>Columns <input id="cols" type="number" min="3" max="101" value="21"></label>
+     <label>Rows <input id="rows" type="number" min="3" max="101" value="7"></label>
     </div>
+    <canvas aria-label="Grid" id="grid" role="img"></canvas>
     <div class="controls">
      <button class="primary" disabled="" id="play">
       ▶ Play
@@ -87,17 +90,8 @@
      </button>
      <label class="speed" for="speed">
       Speed
-      <select id="speed">
-       <option value="400">
-        Slow
-       </option>
-       <option selected="" value="150">
-        Normal
-       </option>
-       <option value="40">
-        Fast
-       </option>
-      </select>
+      <input id="speed" type="range" min="0" max="7" step="1" value="2" aria-label="Playback speed">
+      <output id="rate" for="speed">4 steps/s</output>
      </label>
      <span id="position">
      </span>
@@ -106,10 +100,10 @@
    <section id="inspector">
     <div class="titlebar">
      <h2 id="inspectTitle">
-      Expert transition
+      Expert Controller
      </h2>
      <a href="https://github.com/fanagor/DEL" id="source">
-      View source ↗
+      View Source ↗
      </a>
     </div>
     <div id="detail">

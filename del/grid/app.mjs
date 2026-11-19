@@ -1,6 +1,12 @@
 import { createExecution, inspectStep, applyStep, unpackWeights } from './engine.mjs';
+import { gridView } from './grid.mjs';
+import { validDimension } from './camera.mjs';
 const $ = id => document.getElementById(id);
-const names = { add2: 'Binary addition', mult2: 'Binary multiplication', add10: 'Decimal addition', mult10: 'Decimal multiplication', universal: 'Universal simulation' };
+const drawGrid = gridView($('grid'));
+let columns = window.innerWidth < 720 ? 11 : 21, rows = 7;
+$('cols').value = columns;
+const speeds = [1, 2, 4, 8, 16, 32, 64, 128];
+const names = { add2: 'Binary Addition', mult2: 'Binary Multiplication', add10: 'Decimal Addition', mult10: 'Decimal Multiplication', universal: 'Universal Simulation' };
 const families = { Expert: 'Expert', DFST: 'DFST', DFST_Softmax: 'Softmax DFST' };
 let catalog, execution, frame, timer, generation = 0, busy = true, loadedInput, loadedProgram;
 const glyph = v => v === '' ? 'λ' : v;
@@ -16,7 +22,7 @@ function updateChoices(taskChanged) {
             $('family').value = old;
         const inputs = { add2: '101+11', mult2: '101x11', add10: '297+84', mult10: '23x14', universal: '101' };
         $('input').value = inputs[task];
-        const programs = Object.keys(catalog.experts[task].programs ?? {});
+        const programs = Object.keys(catalog.experts[task].programs ?? {}).filter(name => !/^scaling_[ab]_m/i.test(name));
         options($('program'), programs.map(k => [k, k]));
         if (programs.includes('parity'))
             $('program').value = 'parity';
@@ -51,7 +57,8 @@ async function load() {
     execution = null;
     frame = null;
     controls();
-    $('grid').replaceChildren();
+    drawGrid(null, columns, rows);
+    $('grid').setAttribute('aria-label', 'Grid');
     $('detail').replaceChildren();
     $('counter').value = 'Step 0';
     $('position').textContent = '';
@@ -66,9 +73,9 @@ async function load() {
         const table = catalog.programs?.[run?.programs?.[loadedProgram]];
         const expert = table ? { ...e, programs: { ...e.programs, [loadedProgram]: table } } : e;
         execution = createExecution(expert, loadedInput, loadedProgram, weights);
-        $('inspectTitle').textContent = weights ? 'Neural controller' : 'Expert transition';
+        $('inspectTitle').textContent = weights ? 'Neural Controller' : 'Expert Controller';
         $('source').href = 'https://github.com/fanagor/DEL/tree/main/' + (run ? run.source : 'src/differentiable_exact_learning/data/transitions');
-        $('source').textContent = run ? 'Run and configuration ↗' : 'Expert rules ↗';
+        $('source').textContent = run ? 'Run and Configuration ↗' : 'Expert Rules ↗';
         refresh();
     }
     catch (err) {
@@ -82,21 +89,11 @@ async function load() {
         }
     }
 }
-function renderGrid(s) {
-    const cols = window.innerWidth < 720 ? 11 : 21, rows = 7, cells = [];
-    const left = s.x - Math.floor(cols / 3), top = s.y - Math.floor(rows / 2);
-    for (let y = top; y < top + rows; y++)
-        for (let x = left; x < left + cols; x++) {
-            const elem = document.createElement('span'), symbol = s.cells.get([x, y].join(',')) || '';
-            elem.className = 'cell' + (s.x === x && s.y === y ? ' active' : '');
-            elem.textContent = symbol || ((s.x === x && s.y === y) ? 'λ' : '');
-            elem.title = `(${x}, ${y}) · ${glyph(symbol)}`;
-            cells.push(elem);
-        }
-    $('grid').style.gridTemplateColumns = `repeat(${cols},1fr)`;
-    $('grid').replaceChildren(...cells);
+function renderGrid(s, jump = false) {
+    drawGrid(s, columns, rows, jump);
     $('position').textContent = `Head (${s.x}, ${s.y})`;
-    $('grid').setAttribute('aria-label', `Grid at step ${s.count}, head at ${s.x}, ${s.y}, reading ${glyph(s.cells.get([s.x, s.y].join(',')) || '')}`);
+    const symbol = s.cells.get([s.x, s.y].join(',')) || 'blank';
+    $('grid').setAttribute('aria-label', `Grid at step ${s.count}, head at ${s.x}, ${s.y}, reading ${symbol}`);
 }
 function element(tag, cls, content) {
     const el = document.createElement(tag);
@@ -146,14 +143,14 @@ function inspect(s, a) {
         return;
     }
     const w = s.weights;
-    const intro = action + '. ' + (w.soft ? 'Heatmaps show probabilities after softmax.' : 'The hidden state uses the local viewer’s max-absolute-value normalization.');
+    const intro = action + (w.soft ? '. Heatmaps show probabilities after softmax.' : '');
     const maps = element('div', 'maps', '');
-    maps.append(heatmap('h', s.hidden, w.h, w.soft, 'Hidden coordinate →'), heatmap('A[x] · next state', a.matrices.A, w.h, w.soft, 'Rows: next state'), heatmap('B[x] · write', a.matrices.B, w.h, w.soft, 'Rows: ' + s.expert.alphabet.map(glyph).join(' ')), heatmap('C[x] · move', a.matrices.C, w.h, w.soft, 'Rows: ' + s.expert.motions.join(' ')));
-    details.append(element('p', 'info', intro + ' Matrix columns index the current hidden coordinate.'), maps);
+    maps.append(heatmap('h', s.hidden, w.h, w.soft, 'Hidden coordinate →'), heatmap('A[x] · Next State', a.matrices.A, w.h, w.soft, 'Rows: next state'), heatmap('B[x] · Write', a.matrices.B, w.h, w.soft, 'Rows: ' + s.expert.alphabet.map(glyph).join(' ')), heatmap('C[x] · Move', a.matrices.C, w.h, w.soft, 'Rows: ' + s.expert.motions.join(' ')));
+    details.append(element('p', 'info', intro), maps);
 }
-function refresh() {
+function refresh(jump = false) {
     const s = execution;
-    renderGrid(s);
+    renderGrid(s, jump);
     $('counter').value = 'Step ' + s.count.toLocaleString();
     frame = inspectStep(s);
     inspect(s, frame);
@@ -166,8 +163,9 @@ function step() {
     if (!frame || execution.halted)
         return;
     try {
+        const jump = ['X', 'Y', 'Z'].includes(frame.motion);
         applyStep(execution, frame);
-        refresh();
+        refresh(jump);
     }
     catch (err) {
         pause();
@@ -177,24 +175,39 @@ function step() {
         controls();
     }
 }
-function play() { if (timer) {
-    pause();
-    return;
-} timer = setInterval(step, Number($('speed').value)); $('play').textContent = 'Ⅱ Pause'; }
-$('play').onclick = play;
+function startPlayback() {
+    timer = setInterval(step, 1000 / speeds[$('speed').value]);
+    $('play').textContent = 'Ⅱ Pause';
+}
+$('play').onclick = () => timer ? pause() : startPlayback();
 $('step').onclick = () => { pause(); step(); };
-$('reset').onclick = () => { pause(); const s = execution; $('input').value = loadedInput; execution = createExecution(s.expert, loadedInput, loadedProgram, s.weights); refresh(); };
-$('speed').onchange = () => { if (timer) {
+$('reset').onclick = () => {
     pause();
-    play();
-} };
+    const s = execution;
+    $('input').value = loadedInput;
+    execution = createExecution(s.expert, loadedInput, loadedProgram, s.weights);
+    refresh();
+};
+$('speed').oninput = () => {
+    const rate = speeds[$('speed').value];
+    $('rate').value = rate + ' steps/s';
+    $('speed').setAttribute('aria-valuetext', rate + ' steps per second');
+    if (timer) { clearInterval(timer); startPlayback(); }
+};
+$('speed').oninput();
+function resizeGrid() {
+    if (validDimension($('cols').value)) columns = Number($('cols').value);
+    if (validDimension($('rows').value)) rows = Number($('rows').value);
+    $('cols').value = columns;
+    $('rows').value = rows;
+    if (execution) renderGrid(execution);
+}
+$('cols').onchange = $('rows').onchange = resizeGrid;
 $('settings').onsubmit = e => { e.preventDefault(); if (catalog)
     load(); };
 $('task').onchange = () => { updateChoices(true); load(); };
 $('family').onchange = () => { updateChoices(false); load(); };
 $('program').onchange = $('run').onchange = load;
-window.addEventListener('resize', () => { if (execution)
-    renderGrid(execution); });
 try {
     catalog = await get('data/catalog.json', 'json');
     options($('task'), Object.keys(names).filter(k => catalog.experts[k]).map(k => [k, names[k]]));
