@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Grid explorer · Differentiable Exact Learning
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <a href="/">
+    Hristo Papazov
+   </a>
+   <nav>
+    <a href="https://arxiv.org/abs/2611.21486v1">
+     Paper ↗
+    </a>
+    <a href="https://github.com/fanagor/DEL">
+     Code ↗
+    </a>
+   </nav>
+  </header>
+  <main>
+   <p class="byline">
+    Differentiable Exact Learning
+   </p>
+   <h1>
+    Grid explorer
+   </h1>
+   <p class="intro">
+    Follow an expert or a learned controller one read, write, and move at a time.
+   </p>
+   <form id="settings">
+    <label for="task">
+     Task
+     <select id="task">
+     </select>
+    </label>
+    <label for="family">
+     Controller
+     <select id="family">
+     </select>
+    </label>
+    <label for="run" hidden="" id="runLabel">
+     Released checkpoint
+     <select id="run">
+     </select>
+    </label>
+    <label for="program" hidden="" id="programLabel">
+     Program
+     <select id="program">
+     </select>
+    </label>
+    <label for="input">
+     Input
+     <input autocomplete="off" id="input" maxlength="4096" spellcheck="false" value="101+11"/>
+    </label>
+    <button type="submit">
+     Load input
+    </button>
+   </form>
+   <p id="status" role="status">
+    Loading controllers…
+   </p>
+   <section class="board">
+    <div class="titlebar">
+     <h2>
+      Grid memory
+     </h2>
+     <output id="counter">
+      Step 0
+     </output>
+    </div>
+    <div aria-label="Grid memory" id="grid" role="img">
+    </div>
+    <div class="controls">
+     <button class="primary" disabled="" id="play">
+      ▶ Play
+     </button>
+     <button disabled="" id="step">
+      Step →
+     </button>
+     <button disabled="" id="reset">
+      Restart
+     </button>
+     <label class="speed" for="speed">
+      Speed
+      <select id="speed">
+       <option value="400">
+        Slow
+       </option>
+       <option selected="" value="150">
+        Normal
+       </option>
+       <option value="40">
+        Fast
+       </option>
+      </select>
+     </label>
+     <span id="position">
+     </span>
+    </div>
+   </section>
+   <section id="inspector">
+    <div class="titlebar">
+     <h2 id="inspectTitle">
+      Expert transition
+     </h2>
+     <a href="https://github.com/fanagor/DEL" id="source">
+      View source ↗
+     </a>
+    </div>
+    <div id="detail">
+    </div>
+   </section>
+  </main>
+  <script src="app.mjs" type="module">
+  </script>
+ </body>
+</html>
