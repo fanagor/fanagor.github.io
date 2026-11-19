@@ -20,7 +20,7 @@ function updateChoices(taskChanged) {
         options($('family'), ['Expert', ...new Set(runs.map(r => r.family))].map(k => [k, families[k]]));
         if ([...$('family').options].some(o => o.value === old))
             $('family').value = old;
-        const inputs = { add2: '101+11', mult2: '101x11', add10: '297+84', mult10: '23x14', universal: '101' };
+        const inputs = { add2: '101+11', mult2: '110x11', add10: '297+84', mult10: '83x14', universal: '101' };
         $('input').value = inputs[task];
         const programs = Object.keys(catalog.experts[task].programs ?? {}).filter(name => !/^scaling_[ab]_m/i.test(name));
         options($('program'), programs.map(k => [k, k]));
